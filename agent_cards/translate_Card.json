@@ -1,0 +1,20 @@
+{
+  "name": "Translator Agent",
+  "description": "Translates incoming text to any language using DeepSeek LLM.",
+  "version": "1.0.0",
+  "endpoint": "http://localhost:8001/run",
+  "skills": [
+    {
+      "name": "translate_text",
+      "description": "Translates provided text from a source language to a target language.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "source_lang": {"type": "string", "description": "The source language code (e.g. 'en')"},
+          "target_lang": {"type": "string", "description": "The target language code (e.g. 'fr')"}
+        }
+      },
+      "tags": ["translation", "multilanguage", "deepseek"]
+    }
+  ]
+}
